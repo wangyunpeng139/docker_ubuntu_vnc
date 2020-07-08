@@ -67,7 +67,14 @@ You will see the random password in terminal. You can use it to login ssh by
 ```
 $  ssh -o 'UserKnownHostsFile=/dev/null' root@localhost -p [port]
 ```
+> 注意：
+>
+> 如果你不使用`-o 'UserKnownHostsFile=/dev/null'`这个参数的话，当你换镜像去连接的时候可能会报错
+>
+> 相当于使用 黑洞 `/dev/null`去保存k值，就不会报错
+
 If you want to set password by yourself, you can run 
+
 ```
 $ docker run -it -p [port]:22 -e SSHPW=[YOUR_PW] paopaorobot/ubuntu-xfce-vnc
 ```
