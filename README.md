@@ -1,4 +1,4 @@
-# 0 本仓库参考（致谢）
+# 0 本仓库参考(来源)（致谢）
 
 https://github.com/PaoPaoRobot/docker-ubuntu-xfce-vnc-desktop
 
@@ -19,10 +19,9 @@ docker build -t my_melodic_vnc .
 
 在vnc输入 `IP_docker:5900`即可进入
 
+- [ ] **如果不想安装VNC view的话，就在ubuntu系统搜索Remmina直接使用，就是效果可能不太好**
 
-
-
-
+- [ ] paopaorobot是我参考的原版，不过在使用osf/ros的时候会有一些问题，我进行了小量修改可以使用，否则进入容器后需要手动执行 `startup.sh`
 
 
 
